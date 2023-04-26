@@ -58,14 +58,14 @@ vb.
 
 ### Delete Task 
 
- Het delete van een task: Service Tag "DelTask
-        msg van de client:  "!TaMa<DelTask.Tasknaam"
+ Het delete van een task: Service Tag "DelTask"
+    msg van de client:  "!TaMa<DelTask.Tasknaam"
 
 
 ### Change Task 
 
- Het veranderen van een task: Service Tag "ChangeTask
-        msg van de client:  "!TaMa<ChangeTask.Tasknaam.Datum.(change)"
+ Het veranderen van een task: Service Tag "ChangeTask"
+    msg van de client:  "!TaMa<ChangeTask.Tasknaam.Datum.(change)"
     
 
 
