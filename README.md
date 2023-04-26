@@ -46,5 +46,28 @@ vb.
 ![image](https://user-images.githubusercontent.com/113888494/234489455-8dfafca0-7255-4737-a520-7599fed7d384.png)
 
 
+## Functie's 
+
+
+### Add Task 
+    
+    Het toevoegen van een task: Service Tag "ADDTask
+        msg van de client:  "!TaMa<ADDTask.Tasknaam.TaskDatum"
+        
+        
+
+### Delete Task 
+
+ Het delete van een task: Service Tag "DelTask
+        msg van de client:  "!TaMa<DelTask.Tasknaam"
+
+
+### Change Task 
+
+ Het veranderen van een task: Service Tag "ChangeTask
+        msg van de client:  "!TaMa<ChangeTask.Tasknaam.Datum.(change)"
+    
+
+
 
 
