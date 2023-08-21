@@ -4,6 +4,8 @@
 #include <string>
 #include <zmq.hpp>
 #include <iostream>
+#include <qstring.h>
+#include <qlist.h>
 
 class ZmqBroker {
 private:
@@ -17,6 +19,9 @@ public:
     void connectPusher(const std::string& address);
     void send(const std::string& message);
     std::string receive();
+
+    QList<QString> MessageIn;
+    int ClientID = -1;
 };
 
 #endif // ZMQBROKER_H

@@ -1,29 +1,22 @@
 #include "task.h"
 
-Task::Task(const QString& naam) : naam(naam), voltooid(false) {}
+Task::Task(const std::string& name, const std::string& date)
+    : name(name), date(date), completed(false) {}
 
-// Task::Task(const QString& naam, const QDate& datum) : naam(naam), datum(datum), voltooid(false) {}
 
-QString Task::getNaam() const {
-    return naam;
+
+std::string Task::getName() const {
+    return name;
 }
 
-void Task::setNaam(const QString& naam) {
-    this->naam = naam;
+std::string Task::getDate() const {
+    return date;
 }
 
-// QDate Task::getDatum() const {
-//     return datum;
-// }
-
-// void Task::setDatum(const QDate& datum) {
-//     this->datum = datum;
-// }
-
-bool Task::getVoltooid() const {
-    return voltooid;
+bool Task::isCompleted() const {
+    return completed;
 }
 
-void Task::setVoltooid(bool value) {
-    voltooid = value;
+void Task::setCompleted(bool status) {
+    completed = status;
 }

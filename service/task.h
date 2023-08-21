@@ -1,23 +1,23 @@
 #ifndef TASK_H
 #define TASK_H
 
-#include <QString>
+#include <string>
 
 class Task {
 private:
-    QString naam;
-    // QDate datum;
-    bool voltooid;
+    std::string name;
+    std::string date;
+    bool completed;
+
+
 
 public:
-    Task(const QString& naam);
-    // Task(const QString& naam, const QDate& datum);
-    QString getNaam() const;
-    void setNaam(const QString& naam);
-    // QDate getDatum() const;
-    // void setDatum(const QDate& datum);
-    bool getVoltooid() const;
-    void setVoltooid(bool value);
+
+    Task(const std::string& name, const std::string& date);
+    std::string getName() const;
+    std::string getDate() const;
+    bool isCompleted() const;
+    void setCompleted(bool status);
 };
 
-#endif // TASK_H
+#endif  // TASK_H
